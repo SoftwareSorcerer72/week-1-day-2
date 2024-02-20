@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors, Box Model, Display, Positions</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html" target="_blank">HTML Document Tree</a>
+        <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">CSS Box Model</a>
+        <a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">CSS Selectors</a>
+        <a href="https://www.w3schools.com/css/css_display_visibility.asp" target="_blank">CSS Displays</a>
+        <a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">CSS Positions</a>
+    </div>
+
+    <section>
+        <h1>CSS Box Model</h1>
+        <hr>
+        <img src="https://picsum.photos/300/100?random=1" class="box-model"></img>
+        <img src="https://picsum.photos/300/100?random=2" class="box-model"></img>
+    </section>
+
+    
+    
+    <section>
+        <h1>CSS Selectors</h1>
+        <hr>
+        <div class="selectors">
+            <h3>Simple Selectors</h3>
+            <p>This is a paragraph tag</p>
+            <p id="simple">This is an example of an element being styled by an ID selector</p>
+            <p>This is another paragraph</p>
+        </div>
+        <div id="combo" class="selectors">
+            <h3>Combinator Selectors</h3>
+
+            <div>
+                <h6>Paragraph 1</h6>
+                <h6>Paragraph 2</h6>
+            </div>
+            <h6>Paragraph 3</h6>
+            <h6>Paragraph 4</h6>
+
+            <aside>
+                <p>This is an aside</p>
+            </aside>
+
+            <h4>This is being styled by the adjacent sibling selector</h4>
+
+            <h3>This is being styled by the general sibling selector</h3>
+
+        </div>
+        <div class="selectors">
+            <h3>Pseduo-Class Selectors</h3>
+
+            <a href="https://codingtemple.com/">CodingTemple</a>
+            <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">All Pseudo-Classes</a>
+            <a href="https://randomlink.com">Random Link</a>
+            
+            <div class="child-example">
+                <p>This is the first of many</p>
+                <p>This is the first of many</p>
+                <p>This is the first of many</p>
+                <p>This is the first of many</p>
+                <p>This is the first of many</p>
+            </div>
+
+        </div>
+        <div class="selectors">
+            <h3>Pseduo-Element Selectors</h3>
+
+            <p id="first-line">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+        </div>
+        <div class="selectors">
+            <h3>Attribute Selectors</h3>
+            <div class="attributes">
+                <div title="border first">First</div>
+                <div title="second border">Second</div>
+                <div title="border-third">Third</div>
+                <div title="border">Fourth</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="displays">
+        <h1>CSS Display</h1>
+        <hr>
+        <!-- 
+            The Block Level Element
+            Starts a new line and requiresfull width availability.
+            Includes: div, h1-h6, p, form, header, footer, section, and aside 
+        -->
+        <div class="block-level">
+            First Div
+        </div>
+        <div class="block-level">
+            Second Div
+        </div>
+        <div class="block-level">
+            <h3>This is my header</h3>
+            <h3>Another Header</h3>
+        </div>
+
+        <!-- 
+            And inline element DOES NOT start a new line andonly uses spacerequired for content.Includes: span, a, img
+         -->
+        <p>This is a new paragraph and click <a href='https://codingtemple.com'>HERE</a> for the Coding Temple Home Page</p>
+
+        <div class="gallery">
+            <img src="https://picsum.photos/200?random=10" alt="">
+            <img src="https://picsum.photos/200?random=11" alt="">
+            <img src="https://picsum.photos/200?random=12" alt="" id="middle">
+            <img src="https://picsum.photos/200?random=13" alt="">
+            <img src="https://picsum.photos/200?random=14" alt="">
+        </div>
+    </section>
+
+    <section class="positions">
+        <h1>CSS Positions</h1>
+        <hr>
+        <div class="position-border">
+            <img src="https://picsum.photos/200?random=20" alt="" id="img-1">
+            <img src="https://picsum.photos/200?random=21" alt="" id="img-2">
+            <img src="https://picsum.photos/200?random=22" alt="" id="img-3">
+        </div>
+    </section>
+    
+
+</body>
+</html>

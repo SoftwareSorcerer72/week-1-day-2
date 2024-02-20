@@ -1,0 +1,125 @@
+/* Universal Selector */
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: dodgerblue;
+    padding: 2vw;
+}
+
+.navbar > a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* 
+Box Model is made up of 4 parts: Content, Padding, Border, Margin
+    Content - The content of the box, where text and images appear
+    Padding - Clears an area around the content. The padding is transparent
+    Border - A border that goes around the padding and content
+    Margin - Clears an area outside the border. The margin is transparent
+*/
+
+
+
+/* Simple Selector */
+/* element: grabs all of the elements base on the element name e.g h1,h2,p,div{} */
+
+
+/* class: grabs all of the elements with the class name. begins with a dot (.) e.g. .className */
+
+
+/* id: grabs the element with the id. begins with an octothorpe (#) e.g. #idName */
+
+
+
+/* Combinator Selector - based on the relationship */
+/* Descendant Selector - Used to match all elements that are direct descendants of a specified element */
+
+
+/* Child Selector (>) - Used to match all elements that are direct children of a specified element. Descendant and child selectors are often used interchangably because they are very similar. The difference here though is specificity */
+
+
+/* Adjacent Sibling Selector (+) - Used to select an element that is directly after another specific element. HAS to be immediately following! */
+
+
+/* General Sibling Selector (~) - Used to select an element that is directly after another specific element. HAS to be immediately following! */
+
+
+
+/* Pseudo-class Selector - Select elements based on a certain state */
+/* selector:pseudo-class{} */
+
+/* unvisited link */
+
+/* visited link */
+
+/* mouse over link */
+
+/* selected link */
+
+
+
+
+/* Pseudo Elements - used to style specified parts of an element */
+/* selector::psuedo-element{} */
+
+
+
+
+/* Attribute Selectors - style HTML elements that have specific attributes or attribute values */
+/* selector[attribute]{} */
+
+/* CSS [attribute] Selector */
+
+
+/* CSS [attribute="value"] Selector */
+/* matches the value exactly */
+
+
+/* CSS [attribute~="value"] Selector */
+/* matches the value containing a specified word */
+
+
+/* CSS [attribute|="value"] Selector */
+/* matches a value or a value followed by a hyphen */
+
+
+/* CSS [attribute^="value"] Selector */
+/* matches if the value starts with the specified value */
+
+
+/* CSS [attribute$="value"] Selector */
+/* matches if the value ends with the specified value */
+
+
+/* CSS [attribute*="value"] Selector */
+/* matches contains the specified value */
+
+
+
+/* CSS DISPLAYS */
+
+
+
+/* 
+    Display: None
+    Used to hide an element. Commonly used with JavaScript 
+*/
+
+
+
+/* CSS POSITIONS */
+
+/* position: relative - positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position */
+
+/* position: fixed - positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled */
+
+
+/* position: fixed -  positioned relative to the nearest positioned ancestor */
+
+
+/* position: sticky -  positioned based on the user's scroll position - toggles between relative and fixed, depending on the scroll position */
+
