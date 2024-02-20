@@ -10,6 +10,9 @@
     justify-content: space-around;
     background-color: dodgerblue;
     padding: 2vw;
+    position: sticky;   
+    top: 0px;
+    z-index: 99;
 }
 
 .navbar > a {
@@ -252,11 +255,39 @@ div[title*=s] {
 
 /* position: relative - positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position */
 
+.position-border {
+
+border: 5px solid blue;
+height: 150vh;
+width: 150vw;
+position: relative;
+top: 25px;
+left: 25px;
+}
+
+
 /* position: fixed - positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled */
 
+/* #img-1 {
+    position: fixed;
+    top: 100px;
+    left: 50px;
+} */
 
 /* position: fixed -  positioned relative to the nearest positioned ancestor */
 
+/* #img-2 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+
+} */
 
 /* position: sticky -  positioned based on the user's scroll position - toggles between relative and fixed, depending on the scroll position */
+
+#img-3 {
+    position: sticky;
+    top: 10px;
+    left: 100px;
+}
 
