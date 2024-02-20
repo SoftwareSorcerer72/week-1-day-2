@@ -1,5 +1,8 @@
 /* Universal Selector */
 
+/* * {
+    margin:0;
+} */
 
 
 .navbar{
@@ -22,11 +25,13 @@ Box Model is made up of 4 parts: Content, Padding, Border, Margin
     Border - A border that goes around the padding and content
     Margin - Clears an area outside the border. The margin is transparent
 */
+
 .box-model {
     border: 5px solid red;
     padding: 25px;
     margin: 20px;
 }
+
 /* Total size:
     Height: 100px (content) + 2*25px (padding) + 2*5 (border) + 2*20 (margin) = 200px
     Width: 300px (content) + 2*25px (padding) + 2*5px (border) + 2*20 (margin) = 400px */
@@ -34,27 +39,61 @@ Box Model is made up of 4 parts: Content, Padding, Border, Margin
 /* Simple Selector */
 /* element: grabs all of the elements base on the element name e.g h1,h2,p,div{} */
 
+h3 {
+    text-transform: uppercase;
+}
+
+section {
+    margin:auto;
+    width: 90vw;
+}
 
 /* class: grabs all of the elements with the class name. begins with a dot (.) e.g. .className */
 
+.selectors {
+
+    border: 2px solid orange;
+    padding: 0 1vw;
+    margin: 3vh 0;
+}
 
 /* id: grabs the element with the id. begins with an octothorpe (#) e.g. #idName */
 
+#simple {
+    text-align: center;
+}
 
+/* To grab multiple selections, comma & space separate before {} e.g. p,img {} */
+
+h1, h6, #simple {
+    color: green;
+}
 
 /* Combinator Selector - based on the relationship */
 /* Descendant Selector - Used to match all elements that are direct descendants of a specified element */
 
+#combo h6 {
+    text-align: right;
+}
 
-/* Child Selector (>) - Used to match all elements that are direct children of a specified element. Descendant and child selectors are often used interchangably because they are very similar. The difference here though is specificity */
+/* Child Selector (>) - Used to match all elements that are direct children of a specified element. Descendant and child selectors are often used interchangeably because they are very similar. The difference here though is specificity */
+
+#combo > h6{
+    color: blue;
+}
 
 
 /* Adjacent Sibling Selector (+) - Used to select an element that is directly after another specific element. HAS to be immediately following! */
 
+aside + h4 {
+    background-color: pink;
+}
 
 /* General Sibling Selector (~) - Used to select an element that is directly after another specific element. HAS to be immediately following! */
 
-
+aside ~ h3 {
+    background-color: crimson;
+}
 
 /* Pseudo-class Selector - Select elements based on a certain state */
 /* selector:pseudo-class{} */
