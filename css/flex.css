@@ -1,0 +1,28 @@
+
+.container-1 {
+    border: 5px solid navy;
+    height: 500px;
+    /* flex properties for Parent (aka container) element */
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap;
+    justify-content: space-evenly; 
+    align-items: center;
+    /* align-content: space-evenly; */
+}
+
+#child-1 {
+    border: 2px solid red;
+    order: 2;
+    align-self: flex-start;
+}
+
+#child-2 {
+    border: 2px solid green;
+    order: 1;
+    align-self: flex-end;
+}
+/* Comment because i accidentally pushed
+ */
